@@ -1,2 +1,43 @@
-# IMG_MAP.html
-This project shows how to make a picture clickable using HTML. The campus map has four numbered buildings. Each number is clickable and links to a different website.  When you click on a building, it opens its assigned webpage.  This project helps practice using image maps, links, and basic HTML to make a simple interactive webpage.
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset=UTF-8>
+   <title>ETSU Campus Image Map</title>
+
+  <title>Image map</title>
+</head>
+<body>
+
+
+<img src="../image/img_map.jpg" width="600" height="396" alt="Image" usemap="#image-map" >
+
+
+<map name="image-map">
+    <area target="_blank" 
+      alt="Click to go to Computer Science Org" 
+      title=" Click to go to Computer Science Org" 
+      href=" https://www.computerscience.org/" 
+      coords="415,153,429,152,432,203,415,204,415,191,407,190,409,174" 
+      shape="poly">
+    <area target="_blank" 
+      alt=" Click to go to College of Business and Technology Home Page." 
+      title="Click to go to College of Business and Technology Home Page."
+      href="https://asingan.psu.edu.ph/college-of-technology-and-business/"
+      coords="269,157,269,196,309,196,306,15"
+      shape="poly">
+    <area target="_blank" 
+      alt="Click to go to Department IC Technology Home Page." 
+      title="Click to go to Department IC Technology Home Page."
+      href="https://dict.gov.ph/" 
+      coords="187,256,187,284,168,282,170,308,207,310,213,25"
+      shape="poly">
+    <area target="_blank"
+      alt= "Click to go to Harper Library Home Page."
+      title=" Click to go to Harper Library Home Page."
+      href="https://www.harper-adams.ac.uk/study/902/the-library/" 
+      coords="554,336,30" 
+      shape="circle">
+</map>
+</body>
+</html>
